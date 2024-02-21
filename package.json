@@ -1,0 +1,59 @@
+{
+  "name": "accounting-reports-ms",
+  "version": "1.0.0",
+  "description": "Microservice to generate reports based on the information loaded from external systems",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --optimize_for_size --max_old_space_size=8400  app.js",
+    "dev": "nodemon --optimize_for_size --max-old-space-size=8400  --trace-warnings app.js",
+    "start:prod": "NODE_ENV=production nodemon nodemon --optimize_for_size --max-old-space-size=8400  app.js",
+    "debug": "ndb app.js"
+  },
+  "keywords": [
+    "RunCode",
+    "Microservice",
+    "Enterprise",
+    "Information"
+  ],
+  "author": "Eyder Ascuntar Rosales",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "compressing": "^1.5.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^7.0.0",
+    "exceljs": "^4.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^1.3.2",
+    "express-rate-limit": "^3.5.0",
+    "helmet": "^3.16.0",
+    "hpp": "^0.2.2",
+    "mongoose": "^5.11.15",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.5.0",
+    "read-excel-file": "^5.1.0",
+    "replace-in-file": "^6.1.0",
+    "slugify": "^1.3.4",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1",
+    "firebase-admin": "^10.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "nodemon": "^2.0.6",
+    "prettier": "^1.17.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}

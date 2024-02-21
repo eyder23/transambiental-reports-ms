@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "persons-ms",
+      "script": "./app.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
